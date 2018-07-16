@@ -22,8 +22,8 @@ $(function() {
          * page?
          */
         it('are defined', function() {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+          expect(allFeeds).toBeDefined();
+          expect(allFeeds.length).not.toBe(0);
         });
 
 
@@ -31,7 +31,16 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
+        function allFeeds_url_test_loop (allFeeds) {
+          it('url defined and is not empty', function() {
+            expect(allFeeds.url).toBeDefined();
+            expect(allFeeds.url).not.toBe();
+          });
+        }
 
+        for (let x = 0; x < allFeeds.length; x++) {
+          allFeeds_url_test_loop(allFeeds[x]);
+        };
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
