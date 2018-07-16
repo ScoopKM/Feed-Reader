@@ -46,6 +46,16 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+        function allFeeds_name_test_loop (allFeeds) {
+          it('name defined and is not empty', function() {
+            expect(allFeeds.name).toBeDefined();
+            expect(allFeeds.name).not.toBe();
+          });
+         }
+
+         for (let x = 0; x < allFeeds.length; x++) {
+           allFeeds_name_test_loop(allFeeds[x]);
+         };
     });
 
 
