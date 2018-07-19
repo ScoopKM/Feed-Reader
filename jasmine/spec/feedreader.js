@@ -14,14 +14,14 @@ $(function() {
     * feeds definitions, the allFeeds variable in our application.
     */
     describe('RSS Feeds', function() {
-        /* This is our first test - it tests to make sure that the
-         * allFeeds variable has been defined and that it is not
-         * empty. Experiment with this before you get started on
-         * the rest of this project. What happens when you change
-         * allFeeds in app.js to be an empty array and refresh the
-         * page?
-         */
-        it('are defined', function() {
+      /* This is our first test - it tests to make sure that the
+       * allFeeds variable has been defined and that it is not
+       * empty. Experiment with this before you get started on
+       * the rest of this project. What happens when you change
+       * allFeeds in app.js to be an empty array and refresh the
+       * page?
+       */
+       it('allFeeds is defined', function() {
           expect(allFeeds).toBeDefined();
           expect(allFeeds.length).not.toBe(0);
         });
@@ -31,33 +31,25 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        function allFeeds_url_test_loop (allFeeds) {
-          it('url defined and is not empty', function() {
-            expect(allFeeds.url).toBeDefined();
-            expect(allFeeds.url).not.toBe();
-          });
-        }
 
-        for (let x = 0; x < allFeeds.length; x++) {
-          allFeeds_url_test_loop(allFeeds[x]);
-        };
+        it('url defined and is not empty', function() {
+          for (let x = 0; x < allFeeds.length; x++) {
+            expect(allFeeds[x].url).toBeDefined();
+            expect(allFeeds.length.url).not.toBe(0);
+          }
+        });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        function allFeeds_name_test_loop (allFeeds) {
-          it('name defined and is not empty', function() {
-            expect(allFeeds.name).toBeDefined();
-            expect(allFeeds.name).not.toBe();
-          });
-         }
-
+        it('name defined and is not empty', function() {
          for (let x = 0; x < allFeeds.length; x++) {
-           allFeeds_name_test_loop(allFeeds[x]);
-         };
-    });
-
+           expect(allFeeds[x].name).toBeDefined();
+           expect(allFeeds.length.name).not.toBe(0);
+         }
+       });
+     });
 
     /* TODO: Write a new test suite named "The menu" */
 
