@@ -100,8 +100,8 @@ $(function() {
   //* TODO: Write a new test suite named "New Feed Selection" */
   describe('New Feed Selection', function() {
 
-    // let onLoadContent;
-    // let newContent;
+    let onLoadContent;
+    let newContent;
     /* TODO: Write a test that ensures when a new feed is loaded
      * by the loadFeed function that the content actually changes.
      * Remember, loadFeed() is asynchronous.
@@ -109,9 +109,9 @@ $(function() {
 
     beforeEach(function(done) {
       loadFeed(0, function() {
-        let onLoadContent = $('feed').text();
+        onLoadContent = $('.feed').text();
         loadFeed(1, function() {
-          let newContent = $('feed').text();
+          newContent = $('.feed').text();
           done();
         });
       });
