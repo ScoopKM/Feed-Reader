@@ -9,7 +9,7 @@
 
 # Project Overview
 
-To view this project you can either open the live version at: https://scoopkm.github.io/fend-feed-reader/ or download/clone the repo and open index.html. This projects covers using [Jasmine](http://jasmine.github.io/) to write test suites to test the functionality of your code before you even write it. This is a good way to ensure that when you add new features it does not break already existing ones, and that your code performs in the way you intended.
+To view this project you can either open the live version at: https://scoopkm.github.io/Feed-Reader/ or download/clone the repo and open index.html. This projects covers using [Jasmine](http://jasmine.github.io/) to write test suites to test the functionality of your code before you even write it. This is a good way to ensure that when you add new features it does not break already existing ones, and that your code performs in the way you intended.
 
 <b>Important Note:</b> If you are not familiar with the jQuery library for JavaScript, I would recommended brushing up on it at [w3schools.com](https://www.w3schools.com/jquery/default.asp), since the majority of this project is written in jQuery syntax, and will be hard to understand without the background knowledge.  
 
